@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(104, 253, 111, 0.4), rgba(0, 119, 255, 0.3)), url('back.gif');
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 150px;
+  }
+
+.partoza{
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 160px;
+}
+
+.saniel{
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 140px;
+}
+
+.tabaosares{
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+#partoza-smile{
+    display: none;
+    position: absolute;
+    height: 40px;
+    top: 430px;
+    left: 270px;
+}
+
+#saniel-smile{
+    display: none;
+    position: absolute;
+    height: 40px;
+    top: 430px;
+    left: 750px;
+}
+
+#tabaosares-smile{
+    display: none;
+    position: absolute;
+    height: 40px;
+    top: 420px;
+    right: 290px;
+}
+
+button{
+    background-color: rgb(141, 209, 77);
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+}
+
+button:hover{
+    background-color: rgb(25, 125, 255);
+    scale: 1.1;
+}
+
+#partozaBtn{
+    margin-top: -5px;
+    margin-left: 220px;
+}
+
+#sanielBtn{
+    margin-top: -5px;
+    margin-left: 270px;
+}
+
+#tabaosaresBtn{
+    margin-top: -5px;
+    margin-left: 280px;
+}

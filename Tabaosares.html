@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabaosares Report</title>
+    <link rel="stylesheet" href="Tabaosares.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="zero-page">
+        <img src="partozaPage0.jpg" alt="0 Page">
+    </div>
+    <div class="first-page">
+        <img src="partozaPage1.jpg" alt="1 Page">
+    </div>
+    <div class="second-page">
+        <img src="partozaPage2.jpg" alt="2 Page">
+    </div>
+    <div class="third-page">
+        <img src="partozaPage3.jpg" alt="3 Page">
+    </div>
+    <div class="fourth-page">
+        <img src="partozaPage4.jpg" alt="4 Page">
+    </div>
+    <div class="fifth-page">
+        <img src="partozaPage5.jpg" alt="5 Page">
+    </div>
+    <div class="sixth-page">
+        <img src="partozaPage6.jpg" alt="6 Page">
+        <h1 id="font-animation">Hello, world!</h1>
+        <button id="runButton">Run</button>
+    </div>
+    <div class="seventh-page">
+        <img src="partozaPage7.jpg" alt="7 Page">
+    </div>
+    <div class="eight-page">
+        <img src="partozaPage8.jpg" alt="8 Page">
+    </div>
+    <div class="nine-page">
+        <img src="partozaPage9.jpg" alt="9 Page">
+    </div>
+    <div class="tenth-page">
+        <img src="partozaPage10.jpg" alt="10 Page">
+    </div>
+    <div class="eleven-page">
+        <img src="partozaPage11.jpg" alt="11 Page">
+    </div>
+    <div class="twelve-page">
+        <img src="partozaPage12.jpg" alt="12 Page">
+    </div>
+    <div class="thirteen-page">
+        <img src="partozaPage13.jpg" alt="13 Page">
+    </div>
+    <div class="fourtheen-page">
+        <img src="partozaPage14.jpg" alt="14 Page">
+    </div>
+    <div class="fiftheen-page">
+        <img src="partozaPage15.jpg" alt="15 Page">
+    </div>
+    <div class="sixtheen-page">
+        <img src="partozaPage16.jpg" alt="16 Page">
+    </div>
+    <div class="end-page">
+        <img src="partozaPageEnd.jpg" alt="16 Page">
+    </div>
+
+    <button id="backToReporters">BACK TO REPORTERS</button>
+
+    <script>
+        let button = document.getElementById("runButton");
+        let textElement = document.getElementById("font-animation");
+       
+        function typeHTMLLoop(element, delay) {
+            var html = element.innerHTML;
+            element.innerHTML = ''; 
+            var i = 0;
+            
+            function type() {
+                var typingInterval = setInterval(function() {
+                    element.innerHTML += html.charAt(i); 
+                    
+                    if (html.charAt(i) === '<') {
+                        var endIndex = html.indexOf('>', i) + 1;
+                        element.innerHTML += html.slice(i + 1, endIndex);
+                        i = endIndex;
+                    } else {
+                        i++;
+                    }
+                }, delay);
+            }
+            
+            type(); 
+        }
+
+        button.addEventListener('click', handleClick);
+        function handleClick() {
+            textElement.style.display = "block";
+            typeHTMLLoop(textElement, 50);
+         }
+
+         let backReporters = document.getElementById("backToReporters");
+
+          backReporters.addEventListener('click', handleClickBR);
+            function handleClickBR() {
+                window.location.href = "Reporters.html";
+            }
+    </script>
+</body>
+</html>

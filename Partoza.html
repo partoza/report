@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partoza Report</title>
+    <link rel="stylesheet" href="Partoza.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="zero-page">
+        <img src="tabaosaresPage0.jpg" alt="0 Page">
+    </div>
+    <div class="first-page">
+        <img src="rexPage1.jpg" alt="1 Page">
+    </div>
+    <div class="second-page">
+        <img src="rexPage2.jpg" alt="2 Page">
+    </div>
+    <div class="third-page">
+        <img src="rexPage3.jpg" alt="3 Page">
+        <img id="multiplyPage"  src="rexMultiply.jpg" alt="Multiply Page Explanation">
+        <img id="dividePage"  src="rexDivide.jpg" alt="Divide Page Explanation">
+        <button id="multiply">SCENARIO</button>
+        <button id="divide">SCENARIO</button>
+        <button id="back">BACK</button>
+    </div>
+    <div class="fourth-page">
+        <img src="rexPage4.jpg" alt="4 Page">
+    </div>
+    <div class="fifth-page">
+        <img src="rexPage5.jpg" alt="5 Page">
+    </div>
+    <div class="sixth-page">
+        <img src="rexPage6.jpg" alt="6 Page">
+    </div>
+    <div class="seventh-page">
+        <img src="rexPage7.jpg" alt="7 Page">
+    </div>
+    <div class="eight-page">
+        <img src="rexPage8.jpg" alt="8 Page">
+    </div>
+    <div class="nine-page">
+        <img src="rexPage9.jpg" alt="9 Page">
+    </div>
+    <div class="tenth-page">
+        <img src="rexPage10.jpg" alt="10 Page">
+    </div>
+    <div class="eleven-page">
+        <img src="rexPage11.jpg" alt="11 Page">
+    </div>
+    <div class="twelve-page">
+        <img src="rexPage12.jpg" alt="12 Page">
+    </div>
+    <div class="thirtheen-page">
+        <img src="rexPage13.jpg" alt="13 Page">
+    </div>
+    <div class="foutheen-page">
+        <img src="rexPage14.jpg" alt="14 Page">
+    </div>
+    <div class="fiftheen-page">
+        <img src="rexPage15.jpg" alt="15 Page">
+    </div>
+    <div class="sixtheen-page">
+        <img src="rexPage16.jpg" alt="16 Page">
+    </div>
+    <div class="end-page">
+        <img src="tabaosaresPageEnd.jpg" alt="end Page">
+    </div>
+    <button id="backToReporters">BACK TO REPORTERS</button>
+    <button id="quizGame">PROCEED TO QUIZ GAME</button>
+
+    <script>
+        let mulPage = document.getElementById("multiplyPage");
+        let divPage = document.getElementById("dividePage");
+        let mulBtn = document.getElementById("multiply");
+        let divBtn = document.getElementById("divide");
+        let back = document.getElementById("back");
+        let backReporters = document.getElementById("backToReporters");
+        let quizGame = document.getElementById("quizGame");
+
+        mulBtn.addEventListener('click', handleClickMul);
+            function handleClickMul() {
+                mulBtn.style.display = "none";
+                divBtn.style.display = "none";
+                back.style.display = "block"; 
+                mulPage.style.display = "block";  
+            }
+
+        divBtn.addEventListener('click', handleClickDiv);
+            function handleClickDiv() {
+                mulBtn.style.display = "none";
+                divBtn.style.display = "none";
+                back.style.display = "block"; 
+                divPage.style.display = "block";  
+        }
+
+        back.addEventListener('click', handleClickBack);
+            function handleClickBack() {
+                mulBtn.style.display = "block";
+                divBtn.style.display = "block";
+                back.style.display = "none"; 
+                divPage.style.display = "none"; 
+                mulPage.style.display = "none"; 
+        }
+
+        backReporters.addEventListener('click', handleClickBR);
+            function handleClickBR() {
+                window.location.href = "Reporters.html";
+            }
+        
+            quizGame.addEventListener('click', handleClickQG);
+            function handleClickQG() {
+                window.location.href = "QuizGamePage.html";
+            }
+    </script>
+</body>
+</html>

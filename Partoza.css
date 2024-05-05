@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background-color: rgb(16, 60, 255);
+}
+
+.zero-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+
+.first-page img{ 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.second-page img{
+    background-size: cover;  
+    background-position: center;
+    width: 100%;
+}
+
+.third-page img{ 
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+
+.fourth-page img{
+    background-size: cover;  
+    background-position: center;
+    width: 100%;
+}
+
+.fifth-page img{
+    background-size: cover;  
+    background-position: center;
+    width: 100%;
+}
+
+.sixth-page img{
+    background-size: cover;  
+    background-position: center;
+    width: 100%;
+}
+
+.seventh-page img{
+    background-size: cover;  
+    background-position: center;
+    width: 100%;
+}
+
+.eight-page img{ 
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.nine-page img{ 
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.tenth-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.eleven-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.twelve-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.thirtheen-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.foutheen-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.fiftheen-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.sixtheen-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+.end-page img{
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+}
+
+button{
+    background-color: #a5a5a5;
+    color: white;
+    border: none;
+    font-size: 35px;
+    font-family: "Jersey 15", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    scale: 1.1;
+    background-color: #6e0202;
+}
+
+#multiply{
+    top: 2170px; 
+    right: 100px;
+    position: absolute;
+    display: block; 
+}
+
+#divide{
+    top: 2590px; 
+    right: 90px;
+    position: absolute;
+    display: block; 
+}
+
+#multiplyPage{
+    position: absolute; 
+    top: 1789px; 
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    display: none;
+}
+
+#dividePage{
+    position: absolute; 
+    top: 1787px; 
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    display: none;
+}
+
+#back{
+    top: 2580px; 
+    left: 40px;
+    position: absolute;
+    display: none; 
+}
+
+#backToReporters{
+    top: 15900px; 
+    left: 40%;
+    position: absolute;
+    display: block; 
+}
+
+#backToReporters:hover{
+    scale: 1.1;
+    background-color: #a509cc;
+}
+
+#quizGame{
+    top: 15970px; 
+    left: 39%;
+    position: absolute;
+    display: block; 
+}
+
+#quizGame:hover{
+    scale: 1.1;
+    background-color: #a509cc;
+}
+

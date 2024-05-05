@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assembly Programming</title>
+  <link rel="stylesheet" href="AssemblyProgramming.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1 id="topic">Assembly Programming</h1>
+    <h5>Presented by: <br>John Rex Partoza<br>Jedrick Saniel<br>Krystuff Tabaosares</h5> 
+    <div class="button-container">
+        <button class="pixel-button" id="start">Start</button>
+    </div>
+    <script>
+            function typeHTMLLoop(element, delay) {
+            var html = element.innerHTML;
+            element.innerHTML = ''; 
+            var i = 0;
+            
+            function type() {
+                var typingInterval = setInterval(function() {
+                    element.innerHTML += html.charAt(i); 
+                    
+                    if (html.charAt(i) === '<') {
+                        var endIndex = html.indexOf('>', i) + 1;
+                        element.innerHTML += html.slice(i + 1, endIndex);
+                        i = endIndex;
+                    } else {
+                        i++;
+                    }
+                    
+                    if (i >= html.length) {
+                        clearInterval(typingInterval);
+                        setTimeout(function() {
+                            element.innerHTML = ''; 
+                            i = 0; 
+                            type(); 
+                        }, 5000); 
+                    }
+                }, delay);
+            }
+            
+            type(); // Start typing
+        }
+
+        window.onload = function() {
+            var textElement = document.getElementById("topic");
+            typeHTMLLoop(textElement, 50);
+        };
+
+        let startBtn = document.getElementById("start");
+        startBtn.addEventListener('click', handleClick);
+
+        function handleClick() {
+            window.location.href = "Reporters.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporters</title>
+  <link rel="stylesheet" href="Reporters.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>THE REPORTERS</h1>
+    <img class="partoza" src="partoza-half.png" alt="Description of the image">
+    <img class="saniel" src="saniel-half.png" alt="Description of the image">
+    <img class="tabaosares" src="tabaosares-half.png" alt="Description of the image">
+    <img id="partoza-smile" src="smile.png" alt="Description of the image">
+    <img id="saniel-smile" src="smile.png" alt="Description of the image">
+    <img id="tabaosares-smile" src="smile.png" alt="Description of the image">
+    <button id="partozaBtn">Partoza</button>
+    <button id="sanielBtn">Saniel</button>
+    <button id="tabaosaresBtn">Tabaosares</button>
+
+    <script>
+         let btnPartoza = document.getElementById("partozaBtn");
+         let smileP = document.getElementById("partoza-smile");
+
+            btnPartoza.addEventListener('click', handleClickP);
+            function handleClickP() {
+                window.location.href = "Partoza.html";
+                smileP.style.display = "block";
+            }
+            btnPartoza.addEventListener('mouseenter', handleMouseEnterP);
+            btnPartoza.addEventListener('mouseleave', handleMouseLeaveP);
+            function handleMouseEnterP() {
+                smileP.style.display = "block";
+            }
+            function handleMouseLeaveP() {
+                smileP.style.display = "none";
+            }
+            
+            let btnSaniel = document.getElementById("sanielBtn");
+            let smileS = document.getElementById("saniel-smile");
+         
+            btnSaniel.addEventListener('click', handleClickS);
+            function handleClickS() {
+                window.location.href = "Saniel.html";
+                smileS.style.display = "block"; 
+            }
+            btnSaniel.addEventListener('mouseenter', handleMouseEnterS);
+            btnSaniel.addEventListener('mouseleave', handleMouseLeaveS);
+            function handleMouseEnterS() {
+                smileS.style.display = "block"; 
+            }
+            function handleMouseLeaveS () {
+                smileS.style.display = "none";
+            }
+
+            let btnTabaosares = document.getElementById("tabaosaresBtn");
+            let smileT = document.getElementById("tabaosares-smile");
+         
+            btnTabaosares.addEventListener('click', handleClickT);
+            function handleClickT() {
+                window.location.href = "Tabaosares.html";
+                smileT.style.display = "block";
+            }
+            btnTabaosares.addEventListener('mouseenter', handleMouseEnterT);
+            btnTabaosares.addEventListener('mouseleave', handleMouseLeaveT);
+            function handleMouseEnterT() {
+                smileT.style.display = "block"; 
+            }
+            function handleMouseLeaveT() {
+                smileT.style.display = "none";
+            }
+    </script>
+</body>
+</html>
