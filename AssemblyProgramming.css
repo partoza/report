@@ -12,6 +12,8 @@
     background-size: cover;
 }
 
+
+
   h1{
     text-align: center;
     color: white;
@@ -56,4 +58,13 @@
 
 .pixel-button:active {
     transform: translateY(2px);
+}
+
+p{
+  margin-top: 190px;
+  text-align: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
 }
