@@ -124,14 +124,14 @@ button:hover{
 }
 
 #multiply{
-    top: 2170px; 
+    top: 2190px; 
     right: 100px;
     position: absolute;
     display: block; 
 }
 
 #divide{
-    top: 2590px; 
+    top: 2610px; 
     right: 90px;
     position: absolute;
     display: block; 
@@ -184,5 +184,78 @@ button:hover{
 #quizGame:hover{
     scale: 1.1;
     background-color: #a509cc;
+}
+
+#helloWorldExample{
+    position: absolute; 
+    top: 800px;
+    right: 250px; 
+    background-size: cover; 
+    background-position: center;
+}
+
+#helloWorldExample:hover{
+    scale: 1.1;
+    background-color: rgb(25, 106, 255);
+}
+
+#inputExample{
+    position: absolute; 
+    top: 800px;
+    right: 50px; 
+    background-size: cover; 
+    background-position: center;
+}
+
+#inputExample:hover{
+    scale: 1.1;
+    background-color: rgb(25, 106, 255);
+}
+
+#arithmeticExample{
+    position: absolute; 
+    top: 2600px;
+    left: 50px;
+    background-size: cover; 
+    background-position: center;
+}
+
+#logicExample{
+    position: absolute; 
+    top: 12450px;
+    right: 600px; 
+    background-size: cover; 
+    background-position: center;
+}
+
+#logicExample:hover{
+    scale: 1.1;
+    background-color: rgb(55, 0, 255);
+}
+
+#loopsExample{
+    position: absolute; 
+    top: 13330px;
+    right: 80px; 
+    background-size: cover; 
+    background-position: center;
+}
+
+#loopsExample:hover{
+    scale: 1.1;
+    background-color: rgb(114, 34, 23);
+}
+
+#arrayExample{
+    position: absolute; 
+    top: 15120px;
+    right: 80px; 
+    background-size: cover; 
+    background-position: center;
+}
+
+#arrayExample:hover{
+    scale: 1.1;
+    background-color: rgb(95, 0, 119);
 }
 
